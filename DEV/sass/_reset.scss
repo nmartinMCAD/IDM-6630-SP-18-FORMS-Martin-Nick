@@ -1,0 +1,14 @@
+html {
+  box-sizing: border-box;
+  overflow: scroll;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+  margin: 0;
+  padding: 0;
+}
+
+div.clearFix {
+  clear: both;
+}
