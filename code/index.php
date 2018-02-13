@@ -17,7 +17,7 @@
 
           $conn = new PDO("mysql:host=$host;dbname=$database", $user, $pass);
           $conn->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
-          echo 'Connection Established';
+          echo 'Welcome to the dataPit';
 
           $conn = null;
 
