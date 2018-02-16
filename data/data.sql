@@ -24,27 +24,27 @@ CREATE DATABASE /*!32312 IF NOT EXISTS*/ `week05` /*!40100 DEFAULT CHARACTER SET
 USE `week05`;
 
 --
--- Table structure for table `sites`
+-- Table structure for table `heroes`
 --
 
-DROP TABLE IF EXISTS `sites`;
+DROP TABLE IF EXISTS `heroes`;
 /*!40101 SET @saved_cs_client     = @@character_set_client */;
 /*!40101 SET character_set_client = utf8 */;
-CREATE TABLE `sites` (
+CREATE TABLE `heroes` (
   `id` int(11) NOT NULL AUTO_INCREMENT,
-  `site_name` varchar(255) NOT NULL,
-  `site_url` int(255) NOT NULL,
+  `hero_name` varchar(255) NOT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+) ENGINE=InnoDB AUTO_INCREMENT=3 DEFAULT CHARSET=latin1;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
--- Dumping data for table `sites`
+-- Dumping data for table `heroes`
 --
 
-LOCK TABLES `sites` WRITE;
-/*!40000 ALTER TABLE `sites` DISABLE KEYS */;
-/*!40000 ALTER TABLE `sites` ENABLE KEYS */;
+LOCK TABLES `heroes` WRITE;
+/*!40000 ALTER TABLE `heroes` DISABLE KEYS */;
+INSERT INTO `heroes` VALUES (1,'Cable'),(2,'Cyclops');
+/*!40000 ALTER TABLE `heroes` ENABLE KEYS */;
 UNLOCK TABLES;
 /*!40103 SET TIME_ZONE=@OLD_TIME_ZONE */;
 
@@ -56,4 +56,4 @@ UNLOCK TABLES;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2018-02-13 18:41:11
+-- Dump completed on 2018-02-16 10:35:05

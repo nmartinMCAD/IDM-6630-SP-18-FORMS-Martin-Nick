@@ -8,29 +8,12 @@
     <main>
       <?php
 
-        $host = '172.25.0.2';
-        $database = 'week05';
-        $user = 'idm6630';
-        $pass = 'idm6630';
+        require 'conn.php';
 
-        try {
+        require "forms/insert_form.php";
 
-          $conn = new PDO("mysql:host=$host;dbname=$database", $user, $pass);
-          $conn->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
-          echo 'Welcome to the dataPit';
+        require "hero_list.php";?>
 
-          $conn = null;
-
-        } catch(PDOException $e) {
-
-            echo 'Connection Failed: ' . $e->getMessage();
-            exit();
-
-        }
-
-
-
-      ?>
     </main>
   </body>
 </html>
