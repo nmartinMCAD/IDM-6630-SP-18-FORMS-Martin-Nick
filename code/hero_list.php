@@ -8,9 +8,9 @@ foreach ($conn->query($query) as $hero) {
     echo "<li>" . $hero['hero_name'] . "</li>";
     //echo "<li>" . $hero['id'] . "</li>";
     echo "<li>
-      <form action='stage.php' method='post'>
+      <form action='update.php' method='post'>
         <input type='hidden' name='hero_id' value='". $hero['id'] . "'>
-        <input type='submit' value='Edit'>
+        <input type='submit' value='Reveal Secret Identity'>
       </form>
     </li>";
     echo "<li>

@@ -8,11 +8,13 @@
     <main>
       <?php
 
+        require 'nav.php';
+
         require 'conn.php';
 
-        require "forms/insert_form.php";
+        require "hero_list.php";
 
-        require "hero_list.php";?>
+      ?>
 
     </main>
   </body>

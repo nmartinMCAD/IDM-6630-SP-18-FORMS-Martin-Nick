@@ -1,5 +1,6 @@
 <?php
 
+  require 'nav.php';
   require 'conn.php';
 
   try {
@@ -7,7 +8,7 @@
     $query = "DELETE FROM heroes WHERE id = " . $_REQUEST['hero_id'];
     $conn->exec($query);
 
-    header('Location: index.php');
+    echo "hero deleted";
 
   } catch (PDOException $e) {
 
