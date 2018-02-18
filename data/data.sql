@@ -35,7 +35,7 @@ CREATE TABLE `sites` (
   `site_name` varchar(255) NOT NULL,
   `site_url` varchar(255) NOT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=15 DEFAULT CHARSET=latin1;
+) ENGINE=InnoDB AUTO_INCREMENT=32 DEFAULT CHARSET=latin1;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -44,7 +44,7 @@ CREATE TABLE `sites` (
 
 LOCK TABLES `sites` WRITE;
 /*!40000 ALTER TABLE `sites` DISABLE KEYS */;
-INSERT INTO `sites` VALUES (8,'TOR','https://tor.com'),(9,'Google','https://google.com'),(10,'Apple','https://apple.com'),(11,'Scientific American','https://scientificamerican.com'),(12,'linux','https://linux.com'),(13,'example','https://example.com');
+INSERT INTO `sites` VALUES (8,'TOR','https://tor.com'),(17,'Scientific American','https://scientificamerican.com'),(20,'Dribble','https://dribbble.com/'),(21,'imgur','https://imgur.com/'),(22,'Gizmodo','https://gizmodo.com/'),(23,'Polygon','https://www.polygon.com/'),(25,'Wikipedia','https://www.wikipedia.org/'),(26,'Stack Overflow','https://stackoverflow.com/'),(27,'The Internet Express','https://theinternet.express/'),(29,'Stuff on My Cat','http://stuffonmycat.com/'),(30,'Hologram Electronics','https://hologramelectronics.com/'),(31,'Crawfish Boil Recipe','https://www.epicurious.com/recipes/food/views/old-fashioned-crawfish-boil-105854');
 /*!40000 ALTER TABLE `sites` ENABLE KEYS */;
 UNLOCK TABLES;
 /*!40103 SET TIME_ZONE=@OLD_TIME_ZONE */;
@@ -57,4 +57,4 @@ UNLOCK TABLES;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2018-02-17 19:57:27
+-- Dump completed on 2018-02-18  0:08:30
