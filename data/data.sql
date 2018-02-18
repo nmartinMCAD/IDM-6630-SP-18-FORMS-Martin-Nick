@@ -24,27 +24,28 @@ CREATE DATABASE /*!32312 IF NOT EXISTS*/ `week05` /*!40100 DEFAULT CHARACTER SET
 USE `week05`;
 
 --
--- Table structure for table `heroes`
+-- Table structure for table `sites`
 --
 
-DROP TABLE IF EXISTS `heroes`;
+DROP TABLE IF EXISTS `sites`;
 /*!40101 SET @saved_cs_client     = @@character_set_client */;
 /*!40101 SET character_set_client = utf8 */;
-CREATE TABLE `heroes` (
+CREATE TABLE `sites` (
   `id` int(11) NOT NULL AUTO_INCREMENT,
-  `hero_name` varchar(255) NOT NULL,
+  `site_name` varchar(255) NOT NULL,
+  `site_url` varchar(255) NOT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=36 DEFAULT CHARSET=latin1;
+) ENGINE=InnoDB AUTO_INCREMENT=15 DEFAULT CHARSET=latin1;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
--- Dumping data for table `heroes`
+-- Dumping data for table `sites`
 --
 
-LOCK TABLES `heroes` WRITE;
-/*!40000 ALTER TABLE `heroes` DISABLE KEYS */;
-INSERT INTO `heroes` VALUES (35,'Cable');
-/*!40000 ALTER TABLE `heroes` ENABLE KEYS */;
+LOCK TABLES `sites` WRITE;
+/*!40000 ALTER TABLE `sites` DISABLE KEYS */;
+INSERT INTO `sites` VALUES (8,'TOR','https://tor.com'),(9,'Google','https://google.com'),(10,'Apple','https://apple.com'),(11,'Scientific American','https://scientificamerican.com'),(12,'linux','https://linux.com'),(13,'example','https://example.com');
+/*!40000 ALTER TABLE `sites` ENABLE KEYS */;
 UNLOCK TABLES;
 /*!40103 SET TIME_ZONE=@OLD_TIME_ZONE */;
 
@@ -56,4 +57,4 @@ UNLOCK TABLES;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2018-02-17  0:05:33
+-- Dump completed on 2018-02-17 19:57:27

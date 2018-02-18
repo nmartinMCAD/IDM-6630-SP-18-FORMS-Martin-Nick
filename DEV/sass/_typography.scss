@@ -1,0 +1,41 @@
+html {
+  font-family: $font;
+}
+
+h1 {
+  font-family: $headerFont;
+  font-size: 4em;
+  color: $green;
+  position: absolute;
+  top: -2.8rem;
+  left: 1rem;
+}
+
+.updateForm h1 {
+  color: $yellow;
+}
+
+ul {
+  list-style-type: none;
+}
+
+.siteList li:nth-of-type(1) {
+  font-size: 1.4em;
+  font-weight: bold;
+}
+
+a {
+  color: $black;
+}
+
+a:hover {
+  color: $yellow;
+}
+
+.fa-database {
+  opacity: .05;
+  font-size: 20em;
+  margin-top: 2rem;
+  margin-left: 50%;
+  transform: translateX(-50%);
+}
